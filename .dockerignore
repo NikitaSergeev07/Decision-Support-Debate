@@ -1,0 +1,16 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.py[cod]
+*.egg-info
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Local env stays outside image; passed at runtime via docker compose
+.env
+
+# Frontend artifacts / deps are rebuilt in image
+frontend/node_modules
+frontend/dist
